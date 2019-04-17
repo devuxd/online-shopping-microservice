@@ -3,20 +3,23 @@ var express = require('express');
 var router = express.Router();
 var service = require('../service/microservice');
 var testEnvironment = true;
-router.post('/addTodo', function (req, res) {
-    res.send(service.addTodo(req.body.todo));
+
+router.get('/', function(req, res, next) {
+    res.send('List of endpoints: yourRecommendations ');
 });
 
-router.get('/browseItems', async (req, res, next) => {
+router.get('/yourRecommendations', async (req, res, next) => {
 
     try {
-
-        const itemList = await service.browseItems(req.query.userInfo,req.query.itemName);
+        const userParam = {
+            userId: req.query.userId
+        };
+        const itemList = await service.yourRecommendations(userParam);
         res.json(itemList);
     } catch (e) {
         //this will eventually be handled by your error handling middleware
         if (e instanceof TypeError || e.message == 'Illegal Argument Exception') {
-            const nullItems = [{
+            const nullObjects = [{
                 name: 'null',
                 description: 'null',
                 id: 'null',
@@ -28,7 +31,7 @@ router.get('/browseItems', async (req, res, next) => {
                 reviews: {},
 
             }];
-            res.send(nullItems);
+            res.send(nullObjects);
         } else {
 
             console.log('exception: ', e.message);
@@ -36,7 +39,6 @@ router.get('/browseItems', async (req, res, next) => {
         }
     }
 
-    // res.send(service.addTodo(req.body.todo));
 });
 
 
