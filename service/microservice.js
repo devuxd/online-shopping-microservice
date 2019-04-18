@@ -24,7 +24,8 @@ async function yourRecommendations(userId) {
   // var flag = await firebaseUtil.deleteItemFromItemInStore(item);
   // var flag2 = await firebaseUtil.updateShoppingCart("eaghayi",item);
   // //  await firebaseUtil.saveLog('eaghayi','1','viewed');
-  var flagReview = await firebaseUtil.addOrUpdateReview("tlatoza",11,"not bad6",4);
+  // var flagReview = await firebaseUtil.addOrUpdateReview("tlatoza",11,"not bad6",4);
+  // var users = await firebaseUtil.getUsers();
     const result=[];
     for(var i=0;i< logs.length ; i++){
         if(logs[i].action==='viewed' && logs[i].userId === userId ){

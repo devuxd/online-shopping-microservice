@@ -221,23 +221,7 @@ async function addOrUpdateReview(userId, itemId , comment, rate) {
     await dataBaseRef.once("value", function (data) {
         const allReviews = data.val();
 
-        // for (var key in allReviews) {
-        //
-        //     if (allReviews[key].itemId === itemId) {
-        //         for (var itemKey in allReviews[key].reviewsOfItem) {
-        //             if (allReviews[key].reviewsOfItem[itemKey].userId === userId) {
-        //
-        //                 dataBaseRef.child(key).child("reviewsOfItem").child(itemKey).remove();
-        //                 resultFlag=true;
-        //                 break;
-        //             }
-        //         }
-        //
-        //         dataBaseRef.child(key).child("reviewsOfItem").push(review);
-        //     }
-        //
-        // }
-        for (var key in allReviews) {
+             for (var key in allReviews) {
             if (allReviews[key].itemId === itemId && allReviews[key].review.userId ===userId ) {
                 dataBaseRef.child(key).child("review").set({
                     comment:comment,
@@ -265,6 +249,25 @@ async function addOrUpdateReview(userId, itemId , comment, rate) {
     return resultFlag;
 }
 
+async function getUsers() {
+    if (!firebase.apps.length) {
+        initializeFirebase();
+    }
+    var dataBaseRef = firebase.database().ref().child('Control-condition').child('users');
+    var result = [];
+    await dataBaseRef.once("value", function (data) {
+        const items = data.val();
+
+        for (var key in items) {
+
+            result.push(items[key]);
+
+        }
+
+    });
+    return result;
+}
+
 module.exports = {
     getLogs: getLogs,
     saveLog: saveLog,
@@ -273,6 +276,7 @@ module.exports = {
     addOrUpdateItemToItemsInStore: addOrUpdateItemToItemsInStore,
     getShoppingCarts: getShoppingCarts,
     updateShoppingCart: updateShoppingCart,
-    addOrUpdateReview :addOrUpdateReview
+    addOrUpdateReview :addOrUpdateReview,
+    getUsers:getUsers
 
 };
