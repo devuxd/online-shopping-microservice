@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3b2663d-af27-452d-98fd-3f02dbc3cc1d" name="Default" comment="adding the first endpoint. defining yourRecommendations endpoint.">
+      <change beforePath="" afterPath="$PROJECT_DIR$/service/ADTs.js" />
       <change beforePath="$PROJECT_DIR$/service/microservice.js" afterPath="$PROJECT_DIR$/service/microservice.js" />
-      <change beforePath="$PROJECT_DIR$/third-party-api/firebaseAPI.js" afterPath="$PROJECT_DIR$/third-party-api/firebaseAPI.js" />
+      <change beforePath="$PROJECT_DIR$/tests/yourRecommendationsTests.js" afterPath="$PROJECT_DIR$/tests/yourRecommendationsTests.js" />
+      <change beforePath="$PROJECT_DIR$/third-party-api/firebaseWrapper.js" afterPath="$PROJECT_DIR$/third-party-api/firebaseWrapper.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,16 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="endpoints.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/endpoints.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -40,8 +32,8 @@
       <file leaf-file-name="yourRecommendationsTests.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/yourRecommendationsTests.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="17" column="58" lean-forward="true" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -60,8 +52,18 @@
       <file leaf-file-name="microservice.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service/microservice.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+            <state relative-caret-position="525">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ADTs.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/ADTs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -80,8 +82,8 @@
       <file leaf-file-name="firebaseWrapper.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/third-party-api/firebaseWrapper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1176">
-              <caret line="82" column="30" lean-forward="false" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+            <state relative-caret-position="169">
+              <caret line="66" column="69" lean-forward="false" selection-start-line="66" selection-start-column="69" selection-end-line="66" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -90,9 +92,11 @@
       <file leaf-file-name="firebaseAPI.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/third-party-api/firebaseAPI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1111">
-              <caret line="145" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="2682">
+              <caret line="289" column="0" lean-forward="false" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,8 +139,10 @@
       <find>SaveObjectImplementation</find>
       <find>result</find>
       <find>saveOrUpdateItem</find>
-      <find>5070442734</find>
       <find>delete</find>
+      <find>date</find>
+      <find>date(</find>
+      <find>5070442734</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,12 +158,13 @@
         <option value="$PROJECT_DIR$/util/firebaseUtil.js" />
         <option value="$PROJECT_DIR$/routes/endpoints.js" />
         <option value="$PROJECT_DIR$/third-party-api/firebaseUtil.js" />
-        <option value="$PROJECT_DIR$/tests/yourRecommendationsTests.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/third-party-api/payShipAPI.js" />
-        <option value="$PROJECT_DIR$/third-party-api/firebaseWrapper.js" />
-        <option value="$PROJECT_DIR$/service/microservice.js" />
         <option value="$PROJECT_DIR$/third-party-api/firebaseAPI.js" />
+        <option value="$PROJECT_DIR$/tests/yourRecommendationsTests.js" />
+        <option value="$PROJECT_DIR$/service/microservice.js" />
+        <option value="$PROJECT_DIR$/service/ADTs.js" />
+        <option value="$PROJECT_DIR$/third-party-api/firebaseWrapper.js" />
       </list>
     </option>
   </component>
@@ -179,10 +186,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="308" />
-    <option name="y" value="91" />
-    <option name="width" value="1520" />
-    <option name="height" value="882" />
+    <option name="x" value="286" />
+    <option name="y" value="28" />
+    <option name="width" value="1542" />
+    <option name="height" value="945" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -312,7 +319,7 @@
       <workItem from="1555334418198" duration="8010000" />
       <workItem from="1555447535649" duration="11890000" />
       <workItem from="1555509256909" duration="6603000" />
-      <workItem from="1555596408598" duration="17122000" />
+      <workItem from="1555596408598" duration="19759000" />
     </task>
     <task id="LOCAL-00001" summary="adding the first endpoint, it is not complete.">
       <created>1554853872090</created>
@@ -332,22 +339,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46224000" />
+    <option name="totallyTimeSpent" value="48861000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="308" y="91" width="1520" height="882" extended-state="0" />
+    <frame x="286" y="28" width="1542" height="945" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16230367" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3361548" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30759162" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.117208675" sideWeight="0.45549738" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12750334" sideWeight="0.45586458" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35526314" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.117208675" sideWeight="0.5445026" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12750334" sideWeight="0.54413545" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25492612" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33115184" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31318018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Notes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -375,31 +383,21 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/third-party-api/firebaseAPI.js</url>
-          <line>206</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/third-party-api/firebaseAPI.js</url>
-          <line>189</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/service/microservice.js</url>
-          <line>38</line>
+          <line>21</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/third-party-api/firebaseWrapper.js</url>
-          <line>45</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="26" />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="27" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="dart-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -530,7 +528,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
           <caret line="88" column="23" lean-forward="true" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -570,7 +570,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -643,7 +645,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -676,7 +680,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -729,14 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/yourRecommendationsTests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -764,26 +762,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/microservice.js">
+    <entry file="file://$PROJECT_DIR$/third-party-api/firebaseAPI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+        <state relative-caret-position="2682">
+          <caret line="289" column="0" lean-forward="false" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/yourRecommendationsTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="58" lean-forward="true" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/third-party-api/firebaseAPI.js">
+    <entry file="file://$PROJECT_DIR$/service/microservice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1111">
-          <caret line="145" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
+        <state relative-caret-position="525">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/ADTs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/third-party-api/firebaseWrapper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="82" column="30" lean-forward="false" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+        <state relative-caret-position="169">
+          <caret line="66" column="69" lean-forward="false" selection-start-line="66" selection-start-column="69" selection-end-line="66" selection-end-column="69" />
           <folding />
         </state>
       </provider>

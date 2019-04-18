@@ -1,5 +1,4 @@
 
-var firebaseUtil = require('../third-party-api/firebaseAPI');
 var firebaseWrapper = require('../third-party-api/firebaseWrapper');
 var testEnvironment = true;
 
@@ -9,45 +8,28 @@ async function yourRecommendations(userId) {
     if (!userId) {
         throw new TypeError('Illegal Argument Exception');
     }
-    var item ={
-        objectType:"items",
-        // objectId: Math.floor(Math.random() * Math.floor(10000000000)),
-        objectId: 1233030367,
-        category:"Electric" ,
-        itemId: 1233030367,
-        description: "smart Tv",
-        itemName: "samsungTV",
-        price: 1233030367,
-        rate: 5,
-        seller: "bestbuy",
-        status: "available"
-    };
-  // await firebaseWrapper.createObject(item);
-   await firebaseWrapper.updateObject(item);
-  //   var result = await firebaseWrapper.getObjects(item.objectType);
-  //   var result = await firebaseWrapper.deleteObject(item.objectType,9334944901);
-  //   console.dir(result);
-  //var logs = await firebaseUtil.getLogs();
-  // var carts = await firebaseUtil.getShoppingCarts();
-  // var items = await firebaseUtil.getItems();
-  // var flag = await firebaseUtil.addOrUpdateItemToItemsInStore(item);
-  // var flag = await firebaseUtil.deleteItemFromItemInStore(item);
-  // var flag2 = await firebaseUtil.updateShoppingCart("eaghayi",item);
-  // //  await firebaseUtil.saveLog('eaghayi','1','viewed');
-  // var flagReview = await firebaseUtil.addOrUpdateReview("tlatoza",11,"not bad6",4);
-  // var users = await firebaseUtil.getUsers();
-  //   const result=[];
-  //   for(var i=0;i< logs.length ; i++){
-  //       if(logs[i].action==='viewed' && logs[i].userId === userId ){
-  //           result.push(logs[i]);
-  //       }
-  //   }
-  //   return result;
-}
+    // var logADT ={
+    //     objectType: "logs" , //{logs,reviews,users,items,shoppingCarts}
+    //     objectId :  Math.floor(Math.random() * Math.floor(10000000000)),  // random integer less than 1000000000
+    //     itemId:2,
+    //     action:"viewed",
+    //     Date:new Date(),
+    //     userId:"eaghayi",
+    // }
+    // await firebaseWrapper.createObject(logADT);
+    const result = [];
+    var logsList = await firebaseWrapper.getObjects("logs");
+    for (var i = 0; i < logsList.length; i++) {
+        if (logsList[i].action === 'viewed' && logsList[i].userId === userId) {
+            result.push(logsList[i]);
+        }
+    }
+    console.dir(result);
+    return result;
 
+}
 
 
 module.exports = {
     yourRecommendations: yourRecommendations
 };
-
