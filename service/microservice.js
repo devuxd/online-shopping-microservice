@@ -1,5 +1,6 @@
 
 var firebaseUtil = require('../third-party-api/firebaseAPI');
+var firebaseWrapper = require('../third-party-api/firebaseWrapper');
 var testEnvironment = true;
 
 // it returns an array of items that user with userId as input arguments viewed before. It gets
@@ -9,16 +10,24 @@ async function yourRecommendations(userId) {
         throw new TypeError('Illegal Argument Exception');
     }
     var item ={
-        category:"elx" ,
-        itemId: 12,
+        objectType:"items",
+        // objectId: Math.floor(Math.random() * Math.floor(10000000000)),
+        objectId: 1233030367,
+        category:"Electric" ,
+        itemId: 1233030367,
         description: "smart Tv",
         itemName: "samsungTV",
-        price: 800,
-        rate: 3,
+        price: 1233030367,
+        rate: 5,
         seller: "bestbuy",
         status: "available"
     };
-  var logs = await firebaseUtil.getLogs();
+  // await firebaseWrapper.createObject(item);
+   await firebaseWrapper.updateObject(item);
+  //   var result = await firebaseWrapper.getObjects(item.objectType);
+  //   var result = await firebaseWrapper.deleteObject(item.objectType,9334944901);
+  //   console.dir(result);
+  //var logs = await firebaseUtil.getLogs();
   // var carts = await firebaseUtil.getShoppingCarts();
   // var items = await firebaseUtil.getItems();
   // var flag = await firebaseUtil.addOrUpdateItemToItemsInStore(item);
@@ -27,13 +36,13 @@ async function yourRecommendations(userId) {
   // //  await firebaseUtil.saveLog('eaghayi','1','viewed');
   // var flagReview = await firebaseUtil.addOrUpdateReview("tlatoza",11,"not bad6",4);
   // var users = await firebaseUtil.getUsers();
-    const result=[];
-    for(var i=0;i< logs.length ; i++){
-        if(logs[i].action==='viewed' && logs[i].userId === userId ){
-            result.push(logs[i]);
-        }
-    }
-    return result;
+  //   const result=[];
+  //   for(var i=0;i< logs.length ; i++){
+  //       if(logs[i].action==='viewed' && logs[i].userId === userId ){
+  //           result.push(logs[i]);
+  //       }
+  //   }
+  //   return result;
 }
 
 
