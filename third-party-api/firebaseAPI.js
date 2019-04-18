@@ -1,6 +1,6 @@
 var firebase = require("firebase-admin");
 
-
+// initial connection to firebase database
 function initializeFirebase() {
     var serviceAccount = require("./online-shopping-microservices-firebase-adminsdk.json");
 
@@ -10,6 +10,7 @@ function initializeFirebase() {
     });
 };
 
+//
 const dateAndTimeOptions = {
     weekday: "long",
     year: "numeric",
@@ -23,6 +24,7 @@ const timeOptions = {
     minute: "2-digit"
 };
 
+// each action the user does is sores in the system, this function return an array of logs of all users
 async function getLogs() {
     if (!firebase.apps.length) {
         initializeFirebase();
@@ -31,11 +33,7 @@ async function getLogs() {
     var result = [];
     await dataBaseRef.once("value", function (data) {
         const logs = data.val();
-
-        // for (var i=0; i <logs.length;i++){
-        //     result.push(logs[i]);
-        // }
-        for (var key in logs) {
+              for (var key in logs) {
 
             result.push(logs[key]);
 
@@ -43,7 +41,8 @@ async function getLogs() {
     });
     return result;
 }
-
+// each action the user does is sores in the system, this function save log for specific user. It stors which user which item is reviewed or viewed or
+// or searched or bought
 async function saveLog(userId, itemId, action) {
     if (!firebase.apps.length) {
         initializeFirebase();
@@ -61,6 +60,7 @@ async function saveLog(userId, itemId, action) {
     return true;
 }
 
+// it returns an array of all items in the online store
 async function getItems() {
     if (!firebase.apps.length) {
         initializeFirebase();
@@ -80,6 +80,8 @@ async function getItems() {
     return result;
 }
 
+
+// sometimes an item is added to store or removed from store, this function add or update the item as input argument
 async function addOrUpdateItemToItemsInStore(item) {
     if (!firebase.apps.length) {
         initializeFirebase();
@@ -114,6 +116,8 @@ async function addOrUpdateItemToItemsInStore(item) {
     });
     return   resultFlag;
 }
+//
+// sometimes an item is removed from an store, this function delete the item as input argument
 async function deleteItemFromItemsInStore(item) {
     if (!firebase.apps.length) {
         initializeFirebase();
@@ -148,6 +152,7 @@ async function deleteItemFromItemsInStore(item) {
     return   resultFlag;
 }
 
+// each user has only one shopping cart, this function return an array of logs of all users's shopping carts
 async function getShoppingCarts() {
     if (!firebase.apps.length) {
         initializeFirebase();
@@ -166,6 +171,8 @@ async function getShoppingCarts() {
     return result;
 }
 
+
+// each user has only one shopping cart, this function add or update an item to the user's shopping cart
 async function updateShoppingCart(userId, item) {
     if (!firebase.apps.length) {
         initializeFirebase();
@@ -206,7 +213,7 @@ async function updateShoppingCart(userId, item) {
     });
     return resultFlag;
 }
-
+// in online stores users can write review for items in the store, this function handle this logic.
 async function addOrUpdateReview(userId, itemId , comment, rate) {
     if (!firebase.apps.length) {
         initializeFirebase();
@@ -248,7 +255,7 @@ async function addOrUpdateReview(userId, itemId , comment, rate) {
     });
     return resultFlag;
 }
-
+// it returns an array of all users of the system. user info of each element in this array contain user Id, first name, last name, address
 async function getUsers() {
     if (!firebase.apps.length) {
         initializeFirebase();

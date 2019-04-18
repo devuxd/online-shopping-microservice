@@ -2,7 +2,8 @@
 var firebaseUtil = require('../third-party-api/firebaseAPI');
 var testEnvironment = true;
 
-
+// it returns an array of items that user with userId as input arguments viewed before. It gets
+//logs of the user and each item has action of viewed wil be returned.
 async function yourRecommendations(userId) {
     if (!userId) {
         throw new TypeError('Illegal Argument Exception');
