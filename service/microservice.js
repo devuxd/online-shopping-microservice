@@ -9,7 +9,7 @@ async function yourRecommendations(userId) {
     }
     var item ={
         category:"elx" ,
-        itemId: 1,
+        itemId: 12,
         description: "smart Tv",
         itemName: "samsungTV",
         price: 800,
@@ -20,13 +20,11 @@ async function yourRecommendations(userId) {
   var logs = await firebaseUtil.getLogs();
   // var carts = await firebaseUtil.getShoppingCarts();
   // var items = await firebaseUtil.getItems();
-  // //var flag = await firebaseUtil.saveOrUpdateItem(item);
+  // var flag = await firebaseUtil.addOrUpdateItemToItemsInStore(item);
+  // var flag = await firebaseUtil.deleteItemFromItemInStore(item);
   // var flag2 = await firebaseUtil.updateShoppingCart("eaghayi",item);
-  // console.log('25: '+flag2);
   // //  await firebaseUtil.saveLog('eaghayi','1','viewed');
-  //
-  //
-  //   console.log("logs"+logs);
+  var flagReview = await firebaseUtil.addOrUpdateReview("tlatoza",11,"not bad6",4);
     const result=[];
     for(var i=0;i< logs.length ; i++){
         if(logs[i].action==='viewed' && logs[i].userId === userId ){

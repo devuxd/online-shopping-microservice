@@ -3,6 +3,4 @@ This project contains REST APIs for handling basic logic of prototype of online 
 ## How to contribute
 clone the repository, edit and push the repository. The list to tasks (open issues) are avialbe in Issues tab, please fix them.
 
-Please be very clear on your commit messages, empty commit messages may be rejected without reason.
-
-
+Please be very clear on your commit messages.
