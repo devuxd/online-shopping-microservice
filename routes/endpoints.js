@@ -11,10 +11,8 @@ router.get('/', function(req, res, next) {
 router.get('/yourRecommendations', async (req, res, next) => {
 
     try {
-        const userParam = {
-            userId: req.query.userId
-        };
-        const itemList = await service.yourRecommendations(userParam);
+
+        const itemList = await service.yourRecommendations(req.query.userId);
         res.json(itemList);
     } catch (e) {
         //this will eventually be handled by your error handling middleware

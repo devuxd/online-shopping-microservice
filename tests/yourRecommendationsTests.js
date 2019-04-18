@@ -10,17 +10,15 @@ describe('test /service/yourRecommendations', function () {
         const result = await axios.get('http://localhost:3000/service/yourRecommendations', {params: {userId: ''}});
         assert.equal(result.data[0].id,'null');
 
-    }
-
-    );
-    it('illegal argument', async function () {
+    });
+    it('return items correctly', async function () {
         const result = await axios.get('http://localhost:3000/service/yourRecommendations', {params: {userId: 'eaghayi'}});
-        assert.equal(result.data[0].id,'1');
+        assert.equal(result.data[0].itemId,'1');
         assert.equal(result.data[0].userId,'eaghayi');
+        assert.notEqual(result.data[0].userId, 'tlatoza');
+        //assert.equal(result.data[0].userId, 'tlatoza');
 
-    }
-
-);
+    });
 
 
 
