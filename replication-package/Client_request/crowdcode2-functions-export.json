@@ -1,0 +1,166 @@
+[ {
+  "code" : "{\n\t//Implementation code here \n\treturn {}; \n}",
+  "description" : "It searches an item(s) among items in the store. It gets information of a user and criteria for search then return the list of items\n that match with the criteria. The criteria can be every string like name, description, or category of the item, so it has to search\n all possible values for returning. Since it wants to return best match results, at the first it searches among all names of all items\n if it could not find a match then go through matching among a description of items, if it could not find a match in description go\n through search among categories of all items in the store. It is responsible for checking inputs like criteria to be valid (do not\n be null or empty), otherwise throw a TypeError. It is possible that the user wants to only view items and does not login into the\n online store, so we do not have the information about the user, but when the user logged in the system and tried to search items,\n the function should store a log from the items that the user searched for future recommendations. If the function needs any interaction\n with 3rd party libraries like the persistent library it can call them for accomplishment the requested logic.\n",
+  "header" : "function searchItems(userId, criteria)",
+  "isThirdPartyAPI" : false,
+  "name" : "searchItems",
+  "parameters" : [ {
+    "description" : "it is user identification",
+    "name" : "userId",
+    "type" : "String"
+  }, {
+    "description" : "The criteria can be every string like name, description, or category of the item",
+    "name" : "criteria",
+    "type" : "String"
+  } ],
+  "returnType" : "item[]",
+  "stubs" : ""
+}, {
+  "code" : "{\n\t//Implementation code here \n\treturn {}; \n}",
+  "description" : "Sometimes we know the item is available in the store, we only want to browse it by its name, this function does that. In the beginning\n, it searches among items for finding the desired item. It is possible something be wrong and the function could not find the item\n, so it must throw TypeError exception in this situation. It is possible that the user wants to only view items and does not login\n into the online store, so we do not have the information about the user , but when the user logged in the system and tried to browse\n items, the function should store a log from the items that the user browsed, this log can be useful for future recommendations. If\n the function needs any interaction with 3rd party libraries like the persistent library it can call them for accomplishment the requested\n logic. last not least, the function is responsible for checking the validity of input arguments, it should check the name of the item\n to not be empty or null, if they are invalid it should throw a TypeError exception.\n",
+  "header" : "function browseItems(userId, itemName)",
+  "isThirdPartyAPI" : false,
+  "name" : "browseItems",
+  "parameters" : [ {
+    "description" : "it is a user identification",
+    "name" : "userId",
+    "type" : "String"
+  }, {
+    "description" : "name of an item",
+    "name" : "itemName",
+    "type" : "String"
+  } ],
+  "returnType" : "item[]",
+  "stubs" : ""
+}, {
+  "code" : "{\n\t//Implementation code here \n\treturn {}; \n}",
+  "description" : "A user wants to see his/her shopping cart, this function provides it for the user. Shopping cart contains all items that the user added\n to his/her cart.  It searches among shopping carts of users and finds the user's shopping cart. Each user has only one shopping cart\n, it finds more than one or zero shopping cart for the user it should throw a TypeError exception. The user logged in the system and\n tried to fetch shopping cart, the function should store a log from the items that the user added to the shopping cart for future item\n recommendations. If the function needs any interaction with 3rd party libraries like the persistent library it can call them for accomplishment\n the requested logic. last not least, the function is responsible for checking the validity of input arguments, it should check the\n information of the user to not be empty or null, if it is invalid it should throw a TypeError exception.\n",
+  "header" : "function fetchShoppingCart(userId)",
+  "isThirdPartyAPI" : false,
+  "name" : "fetchShoppingCart",
+  "parameters" : [ {
+    "description" : "it is a user identification",
+    "name" : "userId",
+    "type" : "String"
+  } ],
+  "returnType" : "shoppingCart",
+  "stubs" : ""
+}, {
+  "code" : "{\n\t//Implementation code here \n\treturn {}; \n}",
+  "description" : "Adding and removing items from the shopping cart are common actions for users, this function updates the shopping cart based on the\n type of action. If the user chooses the type of action as adding an item, it fetches the current shopping cart and adds the new item\n to the cart, then save the shopping cart in the database. It is possible user wants to remove an item from shopping cart, this function\n based on the flag find out the kind of action, then fetch the shopping cart and remove the item from the shopping cart, finally save\n the shopping cart in the database. Sometimes users want to remove an item and save the item for later, in fact, each user has only\n one save for later list. This function should remove the item and save the shopping cart in the database, finally add the item to\n the database as save for the later list of the user. if the flag is not adding,  removing  or savingforlater it should throw and TypeError\n exception. The user already logged in the system and tried to update shopping cart, the function should store a log from the items\n the user add or remove from the shopping cart for future item recommendations. If the function needs any interaction with 3rd party\n libraries like the persistent library it can call them for accomplishment the requested logic. last not least, the function is responsible\n for checking the validity of input arguments, it should check the information of the user, information of the item to not be empty\n or null, if it is invalid it should throw a TypeError exception.\n",
+  "header" : "function updateShoppingCart(userId, itemId, flagOfAction)",
+  "isThirdPartyAPI" : false,
+  "name" : "updateShoppingCart",
+  "parameters" : [ {
+    "description" : "it is a user identification",
+    "name" : "userId",
+    "type" : "String"
+  }, {
+    "description" : "id of an item",
+    "name" : "itemId",
+    "type" : "Number"
+  }, {
+    "description" : "it can be adding or removing flag to show the type of action",
+    "name" : "flagOfAction",
+    "type" : "String"
+  } ],
+  "returnType" : "Boolean",
+  "stubs" : ""
+}, {
+  "code" : "{\n\t//Implementation code here \n\treturn {}; \n}",
+  "description" : "The last step in online purchasing is checking out the shopping cart. The information of cart must be fetched by the information of\n the user, then it should calculate the summation of prices of items in the shopping cart if the summation is zero it shows user does\n not have any item in the shopping cart throws a TypeError exception. All information of the user like the first name, last name is\n available in the database that you can fetch them. If the function needs any interaction with 3rd party libraries like the persistent\n library, payment library, or shipping library it can call them for accomplishment the requested logic. The user already logged in\n the system then is trying to check out the shopping cart, the function should store a log from the items that the user added to the\n shopping cart, this is log is useful for future item recommendations.  The function is responsible for checking the validity of all\n input arguments, if one of them is invalid it should throw a TypeError exception. After the function successfully completes payment\n and shipping logic, it should call 3rd party persistence library for deleting the items in the cart from the list of available item\n in the store.\n",
+  "header" : "function placeOrder(userId, address, paymentCardNumber, cvv2, zipCode)",
+  "isThirdPartyAPI" : false,
+  "name" : "placeOrder",
+  "parameters" : [ {
+    "description" : "it is a user identification",
+    "name" : "userId",
+    "type" : "String"
+  }, {
+    "description" : "it is the address that the purchase must sent to",
+    "name" : "address",
+    "type" : "String"
+  }, {
+    "description" : "16 digits car number",
+    "name" : "paymentCardNumber",
+    "type" : "String"
+  }, {
+    "description" : "3 digits number",
+    "name" : "cvv2",
+    "type" : "String"
+  }, {
+    "description" : "5 digit zip code",
+    "name" : "zipCode",
+    "type" : "String"
+  } ],
+  "returnType" : "Boolean",
+  "stubs" : ""
+}, {
+  "code" : "{\n\t//Implementation code here \n\treturn {}; \n}",
+  "description" : "Sometimes the user wants to compare a browsed item with other similar items, this function handle this logic. It searches among the\n items in the store that their name includes the name of the browsed item, if similar items are more than 20 items, it only returns\n  top 20 items that have user rates more than 3 stars (ex: there exist 35 similar items, it should only return the 20  items rated\n more than 3), if it could not find any similar item it returns empty collection. The user already logged in the system and tried to\n comparing an item, the function should store a log from the items that the user have seen, this can be useful for future item recommendations\n. If the function needs any interaction with 3rd party libraries like the persistent library it can call them for accomplishment the\n requested logic. last not least, the function is responsible for checking the validity of input arguments, it should check the information\n of the user, information of the item to not be empty or null, if it is invalid it should throw a TypeError exception.\n",
+  "header" : "function fetchTopMostSimilarItems(userId, itemName)",
+  "isThirdPartyAPI" : false,
+  "name" : "fetchTopMostSimilarItems",
+  "parameters" : [ {
+    "description" : "it is a user identification",
+    "name" : "userId",
+    "type" : "String"
+  }, {
+    "description" : "name of an item",
+    "name" : "itemName",
+    "type" : "String"
+  } ],
+  "returnType" : "item[]",
+  "stubs" : ""
+}, {
+  "code" : "{\n\t//Implementation code here \n\treturn {}; \n}",
+  "description" : "Each time users come back to the online store might want to see the list of items that they have visited in the previous landings,\n this function should handle this logic. It searches among the items in the logs of all users, then returns all viewed item by the\n user (viewed item has the view flag that shows they are viewed), if it could not find any item it returns an empty collection.  If\n the function needs any interaction with 3rd party libraries like the persistent library it can call them for accomplishment the requested\n logic. last not least, the function is responsible for checking the validity of input arguments, it should check the information of\n the user to not be empty or null, if it is invalid it should throw a TypeError exception.\n",
+  "header" : "function recentlyViewedItems(userId)",
+  "isThirdPartyAPI" : false,
+  "name" : "recentlyViewedItems",
+  "parameters" : [ {
+    "description" : "it is a user identification",
+    "name" : "userId",
+    "type" : "String"
+  } ],
+  "returnType" : "item[]",
+  "stubs" : ""
+}, {
+  "code" : "{\n\t//Implementation code here \n\treturn {}; \n}",
+  "description" : "User sometimes wants to watch the previous items they bought, this function does this logic for them. It searches among the logs of\n the user and returns items that the user purchased. Each item in the log has a flag that shows the item was bought, viewed, or searched\n by the user, so the function only should return the items with the bought flag (bought item has the bought flag that shows they are\n ordered), if it could not find any item it returns an empty collection.  If the function needs any interaction with 3rd party libraries\n like the persistent library it can call them for accomplishment the requested logic. last not least, the function is responsible for\n checking the validity of input arguments, it should check the information of the user to not be empty or null, if it is invalid it\n should throw a TypeError exception.\n",
+  "header" : "function purchasesHistories(userId)",
+  "isThirdPartyAPI" : false,
+  "name" : "purchasesHistories",
+  "parameters" : [ {
+    "description" : "it is a user identification",
+    "name" : "userId",
+    "type" : "String"
+  } ],
+  "returnType" : "log[]",
+  "stubs" : ""
+}, {
+  "code" : "{\n\t//Implementation code here \n\treturn {}; \n}",
+  "description" : "Users can write a review on an item and talk about negative and positive points of the item. It searches among items based on the id\n of the item and find the item, then add the review to existed reviews for the item, then updates the item in the database. If it can\n not find the item, it should throw a TypeError exception.  If the function needs any interaction with 3rd party libraries like the\n persistent library it can call them for accomplishment the requested logic. last not least, the function is responsible for checking\n the validity of input arguments, it should check the information of the user to not be empty or null, if it is invalid it should throw\n a TypeError exception.\n",
+  "header" : "function reviewAnItem(userId, itemId, comment, rate)",
+  "isThirdPartyAPI" : false,
+  "name" : "reviewAnItem",
+  "parameters" : [ {
+    "description" : "it is a user identification",
+    "name" : "userId",
+    "type" : "String"
+  }, {
+    "description" : "an id for item",
+    "name" : "itemId",
+    "type" : "Number"
+  }, {
+    "description" : "a description from user that reveals information about the quality of item",
+    "name" : "comment",
+    "type" : "String"
+  }, {
+    "description" : "stars of an item",
+    "name" : "rate",
+    "type" : "String"
+  } ],
+  "returnType" : "Boolean",
+  "stubs" : ""
+} ]
