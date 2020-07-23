@@ -1,0 +1,119 @@
+[ {
+  "description" : "item is good in the online shopping center, it can be different things from different departments like keyboard, shoes, rice, .... \nthis object contains all information of an item in the online store.",
+  "examples" : [ {
+    "name" : "backpack",
+    "value" : "{\"id\":1, \"name\":\"Ytonet backpack\", \"price\": \"50\", \"rate\":\"4\", \"seller\":\"YJ seller\", \"status\":\"availble\", \"category\":\"dress\"}"
+  }, {
+    "name" : "watch",
+    "value" : "{\"id\":22, \"name\":\"Casio sport men watch\", \"price\": \"220\", \"rate\":\"3\", \"seller\":\"Casio\", \"status\":\"availble\",\"category\":\"men wear\"}"
+  } ],
+  "name" : "item",
+  "structure" : [ {
+    "name" : "id",
+    "type" : "Number"
+  }, {
+    "name" : "name",
+    "type" : "String"
+  }, {
+    "name" : "price",
+    "type" : "String"
+  }, {
+    "name" : "rate",
+    "type" : "String"
+  }, {
+    "name" : "seller",
+    "type" : "String"
+  }, {
+    "name" : "status",
+    "type" : "String"
+  }, {
+    "name" : "category",
+    "type" : "String"
+  } ]
+}, {
+  "description" : "a review is a comment that customers are writing about an item and talk about negative and positive points and give the item a star that shows the quality of the item.",
+  "examples" : [ {
+    "name" : "reviewExample",
+    "value" : "{\"id\":3, \"comment\":\"this item was fine\", \"rate\":\"3\", \"userId\":\"eavazzad\",\"itemId\":4}"
+  } ],
+  "name" : "review",
+  "structure" : [ {
+    "name" : "id",
+    "type" : "Number"
+  }, {
+    "name" : "comment",
+    "type" : "String"
+  }, {
+    "name" : "rate",
+    "type" : "String"
+  }, {
+    "name" : "userId",
+    "type" : "String"
+  }, {
+    "name" : "itemId",
+    "type" : "Number"
+  } ]
+}, {
+  "description" : "it is a basket that contains all items that the customer is added to the cart.",
+  "examples" : [ {
+    "name" : "ShoppingCartExample",
+    "value" : "{\"id\": 222, \"itemeList\":[{\"id\":1, \"name\":\"Ytonet backpack\", \"price\": \"50\", \"rate\":\"4\", \"seller\":\"YJ seller\", \"status\":\"available\", \"category\":\"dress\"},{\"id\":22, \"name\":\"Casio sport men watch\", \"price\": \"220\", \"rate\":\"3\", \"seller\":\"Casio\", \"status\":\"availble\",\"category\":\"men wear\"}], \"userId\":\"eavazzad\"}"
+  } ],
+  "name" : "shoppingCart",
+  "structure" : [ {
+    "name" : "id",
+    "type" : "Number"
+  }, {
+    "name" : "itemeList",
+    "type" : "item[]"
+  }, {
+    "name" : "userId",
+    "type" : "String"
+  } ]
+}, {
+  "description" : "a log is an object for storing in the database to know the user visited, reviewed, or purchased which items. This logs can be used for recommending similar items to the customer.",
+  "examples" : [ {
+    "name" : "logExample",
+    "value" : "{\"id\":36, \"action\":\"purchased\", \"date\":\"03/24/2019\", \"userId\":\"eavazzad\",\"itemId\":4}"
+  } ],
+  "name" : "log",
+  "structure" : [ {
+    "name" : "id",
+    "type" : "Number"
+  }, {
+    "name" : "userId",
+    "type" : "String"
+  }, {
+    "name" : "itemId",
+    "type" : "Number"
+  }, {
+    "name" : "action",
+    "type" : "String"
+  }, {
+    "name" : "date",
+    "type" : "String"
+  } ]
+}, {
+  "description" : "This object contains all information of a user like a name, address, and userId.",
+  "examples" : [ {
+    "name" : "userExample",
+    "value" : "{\"id\":36, \"userId\":\"eavazzad\",\"firstName\":\"Emad\", \"lastName\":\"Aghayi\", \"address\":\"4444 University Dr, fairfax, VA 22030\"}"
+  } ],
+  "name" : "user",
+  "structure" : [ {
+    "name" : "firstName",
+    "type" : "String"
+  }, {
+    "name" : "lastName",
+    "type" : "String"
+  }, {
+    "name" : "address",
+    "type" : "String"
+  }, {
+    "name" : "userId",
+    "type" : "String"
+  }, {
+    "name" : "id",
+    "type" : "Number"
+  } ]
+} ]

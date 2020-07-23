@@ -2,6 +2,8 @@
 This project is a Backend that contains REST APIs for handling basic logic of prototype of online store like Amazon. 
 ## How to contribute
 clone the repository, edit and push the repository. The list to tasks (open issues) are avialbe in Issues tab, please fix them. 
+Server is implemented with Node.js, you can run it by "npm start" and default port is 3000.
+
 Please be very clear on your commit messages.
 ## Project structure
 This reposirotory provides a list of HTTP request for consumers. 
