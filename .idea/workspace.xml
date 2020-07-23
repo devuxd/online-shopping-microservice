@@ -281,7 +281,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Node.js.bin/www">
-    <configuration name="test" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
@@ -289,14 +289,15 @@
       </scripts>
       <node-interpreter value="project" />
       <envs />
+      <method v="2" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="npm.test" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.bin/www" />
+    <list>
+      <item itemvalue="Node.js.bin/www" />
+      <item itemvalue="npm.test" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="npm.test" />
+      <list>
+        <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
   </component>
