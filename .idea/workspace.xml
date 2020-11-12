@@ -2,9 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3b2663d-af27-452d-98fd-3f02dbc3cc1d" name="Default" comment="adding the first endpoint. defining yourRecommendations endpoint.">
-      <change afterPath="$PROJECT_DIR$/replication-package/Crowd output/Archive 4.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replication-package/Crowd output/Archive 5.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replication-package/Crowd output/Archive 6.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Client_request/Client-request.docx" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/client_request/Client-request.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Client_request/crowdcode2-ADTs-export.json" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/client_request/crowdcode2-ADTs-export.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Client_request/crowdcode2-functions-export.json" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/client_request/crowdcode2-functions-export.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Control condition/1_Control_Scehduling_session.docx" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/control_condition/1_Control_Scehduling_session.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Control condition/2_Control_condition_instruction.docx" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/control_condition/2_Control_condition_instruction.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Control condition/Training/Step1_Training material 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/control_condition/Training/Step1_Training material 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM 1.16.16 PM.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Control condition/Training/Training material.docx" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/control_condition/Training/Training material.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Control condition/Training/atlassian-git-cheatsheet.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/control_condition/Training/atlassian-git-cheatsheet.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Crowd Microservices/Implement_Function_Behaviour.png" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/crowdMicroservices_IDE/Implement_Function_Behaviour.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Crowd Microservices/dashboard2.png" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/crowdMicroservices_IDE/dashboard2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Crowd Microservices/review.png" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/crowdMicroservices_IDE/review.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Crowd output/Archive 2.zip" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/control_output/Archive 2.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Crowd output/Archive 3.zip" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/control_output/Archive 3.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Crowd output/Archive 4.zip" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/control_output/Archive 4.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Crowd output/Archive 5.zip" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/control_output/Archive 5.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Crowd output/Archive 6.zip" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/control_output/Archive 6.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Crowd output/crowdcode2-ShoppingSession1-export.json" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/crowd_output/crowdcode2-ShoppingSession1-export.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Crowd output/crowdcode2-ShoppingSession2-export.json" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/crowd_output/crowdcode2-ShoppingSession2-export.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Experimental Condition/1_Scehduling_session 1.16.18 PM.docx" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/experimental_condition/1_Scehduling_session 1.16.18 PM.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Experimental Condition/Experimental_Condition_Instruction.docx" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/experimental_condition/Experimental_Condition_Instruction.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Experimental Condition/Training/Training Task.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/experimental_condition/Training/Training Task.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Experimental Condition/Training/Training material 1.16.16 PM.docx" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/experimental_condition/Training/Training material 1.16.16 PM.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Experimental Condition/~$ep_5_Tasks.docx" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/experimental_condition/~$ep_5_Tasks.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Post task survey/Post Task Survey - Control condition.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/survey/Post Task Survey - Control condition.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replication-package/Post task survey/Post Task Survey - Experimental Condition.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/replication-package/survey/Post Task Survey - Experimental Condition.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,13 +84,16 @@
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="9.5.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.4.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.7" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/replication-package/Crowd output" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -97,6 +124,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -116,6 +144,7 @@
       <workItem from="1555704131736" duration="711000" />
       <workItem from="1555716921271" duration="2661000" />
       <workItem from="1595534110835" duration="289000" />
+      <workItem from="1605206008743" duration="707000" />
     </task>
     <task id="LOCAL-00001" summary="adding the first endpoint, it is not complete.">
       <created>1554853872090</created>
@@ -156,7 +185,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding the first endpoint, it is not complete." />
